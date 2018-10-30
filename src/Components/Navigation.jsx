@@ -19,6 +19,7 @@ export default class Navigation  extends Component{
               <NavItem eventKey={2} href="#">
               <Link to ="/details">Details</Link>
               </NavItem>
+             
               
               <NavDropdown eventKey={3} title="Dropdown" id="basic-nav-dropdown">
                 <MenuItem eventKey={3.1}>Action</MenuItem>
@@ -30,7 +31,9 @@ export default class Navigation  extends Component{
             </Nav>
             <Nav pullRight>
       <NavItem eventKey={2} href="#">
-      <Button bsStyle="success">ADD +</Button>
+      <Button bsStyle="success">  
+      <Link to ="/forminput">ADD +</Link>
+      </Button>
       </NavItem>
     </Nav>
           </Navbar>
