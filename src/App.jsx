@@ -9,17 +9,19 @@ import './zep.png'
 import Details from './Components/Details';
 import {BrowserRouter as Router, Route} from 'react-router-dom';
 import Homepage from './Components/Homepage';
+import Forminput from './Components/Forminput';
 
 class App extends Component {
   render() {
     return (
       <Router>
-         <div>
-        <Navigation/>
-        <Route exact path ="/" component = {Gallery}/>
-        <Route exact path ="/homepage" component ={Homepage}/>
-         <Route exact path ="/details" component={Details}/>
-      </div>
+            <div>
+                    <Navigation/>
+                    <Route exact path ="/" component = {Gallery}/>
+                    <Route exact path ="/homepage" component ={Homepage}/>
+                    <Route exact path ="/details" component={Details}/>
+                    <Route exact path ="/forminput" component={Forminput}/>
+            </div>
       </Router>
     );
   }
