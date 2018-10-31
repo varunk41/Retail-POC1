@@ -29,7 +29,7 @@ export default class Navigation  extends Component{
               </NavDropdown>
             </Nav>
             <Nav pullRight>
-      <NavItem eventKey={2} href="#">
+      <NavItem eventKey={2} href="/add-data">
       <Button bsStyle="success">ADD +</Button>
       </NavItem>
     </Nav>
