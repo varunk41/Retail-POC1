@@ -6,7 +6,7 @@ import './Navigation.css';
 export default class Navigation  extends Component{
     render(){
         return(
-            <Navbar inverse collapseOnSelect>
+            <Navbar expanded  collapseOnSelect style={{color: "blue"}}>
             <Navbar.Header>
               <Navbar.Brand>
                 <a href="#home">POC</a>
@@ -31,8 +31,8 @@ export default class Navigation  extends Component{
             </Nav>
             <Nav pullRight>
       <NavItem eventKey={2} href="#">
-      <Button bsStyle="success">  
-      <Link to ="/forminput">ADD +</Link>
+      <Button bsStyle="default">  
+      <Link to ="/forminput" style={{color:"blue"}}>ADD +</Link>
       </Button>
       </NavItem>
     </Nav>
