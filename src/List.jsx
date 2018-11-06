@@ -8,8 +8,7 @@ export default class List extends Component {
   state = {
     persons: []
   }
-
-  componentDidMount() {
+componentDidMount() {
     axios.get(`http://138.68.251.108:9200/retailpocdev/_search?pretty`)
       .then(res => {
         console.log(res.data.hits.hits);
@@ -18,6 +17,7 @@ export default class List extends Component {
       })
   }
 
+  
   render() {
     return (
     <div>
